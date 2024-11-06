@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeWidth="0.0" text="KNN_2" textAlignment="CENTER" wrappingWidth="801.13671875">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <HBox>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="K=1" textAlignment="CENTER" wrappingWidth="265.13671875">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="K=3" textAlignment="CENTER" wrappingWidth="267.13671875">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="K=5" textAlignment="CENTER" wrappingWidth="265.13671875">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <TableView id="Tabela1" prefHeight="100.0" prefWidth="266.0">
+                     <columns>
+                        <TableColumn id="TIPO1" prefWidth="75.0" text="" />
+                        <TableColumn id="Positivo1" prefWidth="75.0" text="Positivo" />
+                        <TableColumn id="Negativo1" prefWidth="75.0" text="Negativo" />
+                     </columns>
+                  </TableView>
+                  <TableView id="Tabela2" prefHeight="100.0" prefWidth="265.0">
+                     <columns>
+                        <TableColumn id="TIPO2" prefWidth="75.0" text="" />
+                        <TableColumn id="Positivo2" prefWidth="75.0" text="Positivo" />
+                        <TableColumn id="Negativo2" prefWidth="75.0" text="Negativo" />
+                     </columns>
+                  </TableView>
+                  <TableView id="Tabela3" prefHeight="100.0" prefWidth="267.0">
+                     <columns>
+                        <TableColumn id="TIPO3" prefWidth="75.0" text="" />
+                        <TableColumn id="Positivo3" prefWidth="75.0" text="Positivo" />
+                        <TableColumn id="Negativo3" prefWidth="75.0" text="Negativo" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <TableView prefHeight="100.0" prefWidth="266.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+                  <TableView prefHeight="100.0" prefWidth="265.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+                  <TableView prefHeight="100.0" prefWidth="267.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <LineChart>
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
