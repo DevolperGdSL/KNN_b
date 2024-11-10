@@ -14,14 +14,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
-      <VBox prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" alignment="CENTER">
+      <VBox prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" Alignment="CENTER">
          <children>
             <Text strokeWidth="0.0" text="KNN_2" textAlignment="CENTER" wrappingWidth="801.13671875">
                <font>
                   <Font size="40.0" />
                </font>
             </Text>
-            <HBox alignment="CENTER">
+            <HBox Alignment="CENTER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="K=1" textAlignment="CENTER" wrappingWidth="265.13671875">
                      <font>
@@ -40,7 +40,7 @@
                   </Text>
                </children>
             </HBox>
-            <HBox alignment="CENTER">
+            <HBox Alignment="CENTER">
                <children>
                   <TableView fx:id="Tabela1" prefHeight="100.0" prefWidth="266.0">
                      <columns>
@@ -65,7 +65,7 @@
                   </TableView>
                </children>
             </HBox>
-            <HBox alignment="CENTER">
+            <HBox Alignment="CENTER">
                <children>
                   <TableView fx:id="IndDesemp1" prefHeight="100.0" prefWidth="266.0">
                     <columns>

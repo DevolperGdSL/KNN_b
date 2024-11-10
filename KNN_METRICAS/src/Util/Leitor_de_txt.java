@@ -1,21 +1,26 @@
 package Util;
+
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.net.URL;
+
 
 public class Leitor_de_txt {
+
     /**
-     * Lê uma matriz de double de um arquivo e retorna como uma matriz bidimensional.
-     * 
-     * @param caminhoArquivo O caminho do arquivo que contém a matriz.
+     * Lê uma matriz de double de um arquivo (usando uma URL) e retorna como uma matriz bidimensional.
+     *
+     * @param urlArquivo A URL do arquivo que contém a matriz.
      * @return A matriz de double lida do arquivo ou null se ocorrer um erro.
      */
-    public static double[][] lerMatrizDeArquivo(String caminhoArquivo) {
+    public static double[][] lerMatrizDeArquivo(URL urlArquivo) {
         List<double[]> linhasMatriz = new ArrayList<>(); // Lista para armazenar as linhas da matriz
 
-        try (BufferedReader leitor = new BufferedReader(new FileReader(caminhoArquivo))) {
+        try (BufferedReader leitor = new BufferedReader(new InputStreamReader(urlArquivo.openStream()))) {
             String linha;
             while ((linha = leitor.readLine()) != null) {
                 // Divide a linha em elementos, assumindo que os números são separados por espaços
@@ -32,7 +37,7 @@ public class Leitor_de_txt {
             }
 
             // Converte a lista de linhas em uma matriz bidimensional de double
-            double[][] matriz = new double[linhasMatriz.size()][];
+            double[][] matriz = new double[linhasMatriz.size()][]; // Converte a lista para uma matriz
             for (int i = 0; i < linhasMatriz.size(); i++) {
                 matriz[i] = linhasMatriz.get(i);
             }

@@ -128,18 +128,15 @@ public class Ferramentas {
                 }
             }
         }
-
-
-
-
         return matriz;
     }
     public double[][] obterSegundaColuna(double[][] matriz) {
         if (matriz.length == 0 || matriz[0].length < 2) {
             throw new IllegalArgumentException("A matriz não possui uma segunda coluna.");
         }
+        
 
-        double[][] segundaColuna = new double[matriz.length][];
+        double[][] segundaColuna = new double[matriz.length][1];
         for (int i = 0; i < matriz.length; i++) {
             segundaColuna[i][0] = matriz[i][1];
         }
